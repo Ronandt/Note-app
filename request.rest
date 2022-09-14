@@ -1,8 +1,7 @@
 
-POST http://localhost:5000/login
+DELETE http://localhost:5000
 Content-Type: application/json
 
 {
-    "username" : "f",
-    "password" : "f"
+    "_id" : "6320854b182898973005b7f2"
 }

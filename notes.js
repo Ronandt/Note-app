@@ -12,6 +12,21 @@ notesRouter.route("/").get(async (req, res) => {
     const note = await Note.create({description: req.body.description, title: req.body.title, user: req.body._id})
     console.log(note)
     return res.status(200).json(req.body)
+}).delete(async (req, res) => {
+    console.log(req.body)
+    console.log(req.body)
+    console.log(req.body)
+
+    console.log(req.body)
+    console.log(req.body)
+    console.log(req.body)
+    console.log(req.body)
+    console.log(req.body)
+    console.log(req.body)
+
+    const deleted = await Note.findByIdAndDelete(req.body._id)
+    console.log(deleted)
+    return deleted
 })
 
 module.exports = notesRouter
