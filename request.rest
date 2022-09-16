@@ -1,7 +1,9 @@
 
-DELETE http://localhost:5000
+POST http://localhost:5000
 Content-Type: application/json
 
 {
-    "_id" : "6320854b182898973005b7f2"
+    "description" : "FSFS",
+    "title": "42",
+    "_id": "63202816fed6afd0ead627bd"
 }
